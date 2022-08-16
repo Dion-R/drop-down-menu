@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+:root {
+    --almost-white: #FAFAFA;
+    --light-grey: #adadad;
+    --black: #151515;
+    --blueish: #726Cee;
+    --turqoise: #4bb1da;
+    --orange: #EDD556;
+    --purple: #8e4cb6;
+    --primary-font: 'Epilogue', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+    /* display: inline-block; */
+}
+li {
+    list-style: none;
+}
+button {
+    border: none;
+    background: none;
+}
+.h-l {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1.11px;
+}
+.b-m {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.b-s {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.block {
+    display: block;
+}
+.btn {
+    display: inline-block;
+}
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.none {
+    display: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+nav {
+    margin-top: 20px;
+}
+.logo-directory {
+    display: flex;
+    gap: 58px;
+    align-items: center;
+}
+.logo-directory ul {
+    display: flex;
+    gap: 40px;
+}
+.hollow-section {
+    height: 230px;
+    position: relative;
+}
+.register {
+    width: 104px;
+    height: 42px;
+    border: 1px solid black;
+    padding: 13px 0;
+    border-radius: 14px;
+    margin-left: 30px;
+}
+
+.info h1 {
+    margin-bottom: 66px;
+}
+.info p {
+    margin-bottom: 60px;
+}
+.learn-more {
+    width: 160px;
+    border: 1px solid black;
+    height: 56px;
+    padding: 14px 0;
+    border-radius: 14px;
+    margin-bottom: 108px;
+}
+.companies {
+    display: flex;
+    gap: 40px;
+    height: 20px;
+}
+.hero-img {
+    min-width: 0px;
+    position: relative;
+}
+.desktop-img {
+    min-height: 150px;
+    max-width:480px;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+}
+.card {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
+    padding-top: 20px;
+}
+.card li {
+    padding-bottom: 20px;
+}
+.company {
+    position: absolute;
+    left: 250px;
+    min-width: none;
+}
+.features {
+    position: absolute;
+    min-width: none;
+    left: 80px;
+    z-index: 1;
+}
+.features span {
+    margin-left: 5px;
+}
+.features a img{
+height: 16px;
+}
+.inlineF {
+    display: inline-flex;
+    align-items: center;
+}
+.hamburger {
+    display: none;
+}
+.mobile-img {
+    display: none;
+}
+@media screen and (max-width:375px){
+ .logo-directory ul {
+    display: none;
+ }
+ .login-register {
+    display: none;
+ }
+ .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .hamburger {
+    display: block;
+ }
+ .logo-directory {
+    display: block;
+ }
+ .flex {
+    display: block;
+ }
+ .container {
+    max-width: 90%;
+ }
+ .hollow-section {
+    height: 0px;
+ }
+ .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+ }
+ .hero-img {
+    grid-row: 1/2;
+    position: static;
+ }
+ .info {
+    grid-row: 2/3;
+ }
+ .desktop-img {
+    display: none;
+ }
+ .mobile-img {
+    display: block;
+    width: 100%;
+ }
+.h-l {
+    font-size: 35px;
+}
+.info h1  {
+    margin: 20px 0px;
+}
+.info p {
+    text-align: center;
+}
+button {
+width: 100%;
+}
+button a {
+    background-color: #151515;
+    color: white;
+}
+.companies {
+    height: auto;
+    gap: 29px;
+}
+.companies img:nth-of-type(1) {
+    width: 81px;
+}
+.companies img:nth-of-type(2) {
+    width: 53px;
+}
+.companies img:nth-of-type(3) {
+    width: 63px;
+}
+.companies img:nth-of-type(4) {
+    width: 59px;
+}
+.hollow-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    background-color: var(--almost-white);
+    height: 100%;
+    padding-left: 15px;
+    display: none;
+}
+.close-menu {
+    margin-left: 180px;
+}
+.features-sideBar span:nth-of-type(0){
+    margin-right: 5px;
+}
+
+}
